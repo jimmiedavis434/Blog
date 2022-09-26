@@ -1,0 +1,10 @@
+﻿@model Blog
+
+<div class="post-container container d-flex flex-column align-items-center justify-content-center">
+    <img class="post-cover-img" src="@Model.BlogImageUrl1" />
+    <h1>@Model.BlogTitle</h1>
+    <span class="keywords">#@Model.BlogKeyword1 @Model.BlogKeyword2 @Model.BlogKeyword3</span>
+    <a class="btn-green" asp-controller="Blog" asp-action="Index">Return</a>
+    <p>@Model.BlogArticle</p>
+    <a class="btn-green" asp-controller="Blog" asp-action="Index">Return</a>
+</div>
